@@ -29,6 +29,7 @@ private:
     Ui::MainWindow *ui;
     QVector<unsigned char> vbuff;
     uint32_t baseAddr;
+    QTimer *timer;
     int row;
     int column;
 	void loadIni();
