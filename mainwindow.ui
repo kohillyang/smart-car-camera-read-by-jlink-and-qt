@@ -204,6 +204,13 @@
           </property>
          </spacer>
         </item>
+        <item>
+         <widget class="QLabel" name="label_6">
+          <property name="text">
+           <string>By Kohillyang 2016.1.5 </string>
+          </property>
+         </widget>
+        </item>
        </layout>
       </item>
      </layout>
