@@ -2,9 +2,28 @@
 layout: default
 title: 智能车摄像头读取软件
 ---
+[点我从github上下载最新版本](https://github.com/kohillyang/smart-car-camera-read-by-jlink-and-qt/releases/tag/v0.3)</br>
+[如果github上无法正常下载，点我从七牛CDN上下载所有版本](http://oj5adp5xv.bkt.clouddn.com/cameraRead.zip)</br>
+**应广大人民群众的要求，本人于2017/1/9日发布alpha2版本，更新看截图**</br>
+**下文中的文档针对上一版本编写，但是仍然适用**</br>
+原图如下：</br>
+![](./image/image010.png)</br>
+二值化图像如下（阈值160，可在程序中调整）：</br>
+![](./image/image009.png)</br>
+*部分更新如下：*</br>
+1. 自动缩放图像，对高分屏更友好</br>
+2. 增加图像二值化选项，方便需要二值化的算法调整阈值</br>
+3. 调大读取数据的最大上限（10000）,但本人建议不要太大，因为jlink 速度有限</br>
+4. 增加偏移选项，实际读取的地址为基地址+偏移</br>
+5. 修复部分bug</br>
+***Note：参数保存是在程序退出之时，程序运行中拔出jlink会导致软件非正常退出，使输入的参数无法保存。***</br>
+</br>
+</br>
+</br>
+
 ##1. 软件简介
 项目托管于https://github.com/kohillyang/smart-car-camera-read-by-jlink-and-qt, 该软件旨在方便使用jlink读取摄像头数据，最新版本支持自定义分辨率，自定义地址，自定义刷新间隔</br>
-最新Release版本见：https://github.com/kohillyang/smart-car-camera-read-by-jlink-and-qt/releases/download/v0.1-alpha/cameraRead.zip
+最新Release版本见：https://github.com/kohillyang/smart-car-camera-read-by-jlink-and-qt/releases/
 软件截图如下：</br>
 ![截图](https://raw.githubusercontent.com/kohillyang/smart-car-camera-read-by-jlink-and-qt/master/screensnap.jpg)
 ##2. 软件原理以及注意事项
