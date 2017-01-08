@@ -21,7 +21,7 @@ K60可能出现被锁住无法下载的情况，请在jlink commander下输入un
 最新版本在程序**正常**退出的情况下会自动保存基地址，行数，列数等信息，第一次使用时，建议打开文件夹下的settings.ini，设置地址等信息，如下图所示：</br>
 ![](./image/image003.png)</br>
 ![](./image/image004.png)</br>
-关键在于baseAddr的设置，该文件可在工程目录/build/工程名/debug/lst/xxx.map中查看，建议直接在工程路径下找*.map</br>
+关键在于baseAddr的设置，可在工程目录/build/工程名/debug/lst/xxx.map中查看，建议直接在工程路径下找*.map</br>
 比如，假设工程名为firedemo，则该文件的目录为：</br>
 ![](./image/image005.png)</br>
 假设存储图片的数组名为IMG_BUFF，如下图所示</br>
@@ -30,6 +30,6 @@ K60可能出现被锁住无法下载的情况，请在jlink commander下输入un
 ![](./image/image007.png)</br>
 上图中左边是变量名，右边的地址0x1fff04c0填入上文中的settings.ini中的baseAddr即可,对于本例，最终更改的ini截图如下：</br>
 ![](./image/image008.png)</br>
-如果是新摄像头，分辨率默认最大为160*120，否则为320*240，如果出现图像显示不正确的情况，请检查行和列是否正确填写</br>
+如果是新摄像头，分辨率默认最大为160*120，否则为320*240。如果出现图像显示不正确的情况，请检查行和列是否正确填写</br>
 
 
