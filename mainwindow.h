@@ -30,13 +30,13 @@ private:
     QVector<unsigned char> vbuff;
     uint32_t baseAddr;
     QTimer *timer;
+    ImageShowWidget *cw;
     int row;
     int column;
 	void loadIni();
 	void saveIni();
 public slots:
     void updateVbuff();
-    void updateAddrHex(QString newStr);
     void updateBaseAddrColumnRow();
 };
 

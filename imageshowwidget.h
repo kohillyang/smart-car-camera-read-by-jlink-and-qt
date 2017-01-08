@@ -3,27 +3,25 @@
 
 #include <QWidget>
 #include <QPainter>
-
+#include <QImage>
+#include <QVector>
+#include <QSizePolicy>
+#include <QDebug>
 class ImageShowWidget : public QWidget
 {
     Q_OBJECT
 private:
-    char *vbufferPointer;
-    int xwidth,yheight;
+    QVector<unsigned char> image_buffer;
+    int column = 120,row=160;
 public:
-    explicit ImageShowWidget(QWidget *parent = 0,char * newbufferPointer=0, int xwidth=240,int yheight=320);
-    void setVbufferAddr(char  * newaddr){
-         this->vbufferPointer = newaddr;
-    }
-    void setSize(int x, int y){
-        this->resize(x,y);
-        this->xwidth = x;
-        this->yheight = y;
+    explicit ImageShowWidget(QWidget *parent = 0);
+    void updateContentParameter(QVector<unsigned char> o_vec,int column,int row){
+        image_buffer = QVector<unsigned char>(o_vec);
+        this->column = column;
+        this->row = row;
+        this->update();
     }
     void paintEvent(QPaintEvent *);
-signals:
-
-public slots:
 };
 
 #endif // IMAGESHOWWIDGET_H
