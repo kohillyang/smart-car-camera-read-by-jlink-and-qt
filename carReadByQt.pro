@@ -21,4 +21,5 @@ HEADERS  += mainwindow.h \
     jlink.h \
     imageshowwidget.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    mainwindow.ui

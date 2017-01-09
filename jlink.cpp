@@ -33,7 +33,7 @@ JLink::JLink(QObject *parent) : QObject(parent)
         this->appendInfo(infoString);
     }else{
         QMessageBox::warning(0,"warning",QString("info")+infoString,QMessageBox::Ok,QMessageBox::NoButton);
-        exit(1);
+//        exit(1);
     }
     //uint32_t testMem;
     //appendInfo("read four bytes from "+QString::number(this->base_addr,16).toUpper() + ":0x"+QString::number(testMem,16)+"return :"+ QString::number(r,10));
