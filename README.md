@@ -2,8 +2,7 @@
 layout: default
 title: 智能车摄像头读取软件
 ---
-[点我从github上下载最新版本](https://github.com/kohillyang/smart-car-camera-read-by-jlink-and-qt/releases/tag/v0.3)</br>
-[如果github上无法正常下载，点我从七牛CDN上下载所有版本](http://oj5adp5xv.bkt.clouddn.com/cameraRead.zip)</br>
+[点我下载最新版本](http://oj5adp5xv.bkt.clouddn.com/cameraReadv0.3.zip)</br>
 [问题反馈链接(**不受理11号之后的issues**)](https://github.com/kohillyang/smart-car-camera-read-by-jlink-and-qt/issues)</br>
 **应广大人民群众的要求，本人于2017/1/9日发布alpha2版本，更新看截图**</br>
 **下文中的文档针对上一版本编写，但是仍然适用**</br>
